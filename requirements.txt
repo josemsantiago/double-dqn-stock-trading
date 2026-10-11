@@ -6,10 +6,10 @@
 # with, so a re-run reproduces the same pipeline rather than drifting on an API change.
 # Training runs on the CPU, which is faster here than the GPU because the networks are
 # small and the bottleneck is stepping the environment.
-torch==2.8.0
+torch==2.13.0
 gymnasium==1.1.1
 numpy==1.26.4
 pandas==1.4.0
 matplotlib==3.5.1
 python-pptx==1.0.2
-Pillow==11.2.1
+Pillow==12.3.0
