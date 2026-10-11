@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# OS / editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Datasets, checkpoints, and large regenerable artifacts — not source.
+# The tracked run artifacts are the metrics (outputs/) and the figures.
+# ---------------------------------------------------------------------------
+data/raw/*.csv
+models/
+outputs/*.log
+
+# ---------------------------------------------------------------------------
+# Graded deliverables — kept private, never shared. The written report, the
+# slide deck, the narration script, the recorded demo, the build artifacts, and
+# the downloaded reference PDFs are all excluded. Only the code and the
+# reproducible run artifacts (figures, outputs) are tracked, and they regenerate
+# every deliverable.
+# ---------------------------------------------------------------------------
+report/
+presentation/
+demo/
+downloads/
+*.docx
+*.pdf
+*.pptx
+*.mp4

@@ -1,0 +1,14 @@
+Daily price data for SPY (S&P 500 ETF) and QQQ (Nasdaq-100 ETF) is downloaded by
+src/data.py from the public Yahoo Finance chart endpoint
+(query1.finance.yahoo.com/v8/finance/chart). Only the raw close, the dividend- and
+split-adjusted close, and the volume are kept; a day's return uses the adjusted close.
+Stooq, the source named in the Part 1 plan, now sits behind a JavaScript browser check
+that a script cannot pass, so Yahoo is used here.
+
+The datasets themselves are not committed. Re-download them with:
+    python3 src/data.py
+
+Range downloaded: 2003-01-01 to 2024-01-01 (daily). The analysis blocks are
+earlier 2005-2009, train 2010-2018, validation 2019-2020, and test 2021-2023; the two
+years before each block's start are warm-up for the moving-average and volatility
+features.

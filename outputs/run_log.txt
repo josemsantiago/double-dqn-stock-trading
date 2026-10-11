@@ -1,0 +1,18 @@
+=== stage improve ===
+improved validation selection: 40 runs on 16 processes in 76 s
+improved selection (validation):
+reward  turnover_penalty  long_only  val_seed_sharpe_mean  val_seed_sharpe_sd  val_ensemble_sharpe  val_ensemble_turnover  val_ensemble_long  val_ensemble_sharpe_at_20bps  selected
+logret               1.0       True                  1.59                0.52                 1.72                   13.5               0.83                          1.60      True
+   dsr               1.0       True                  1.54                0.48                 1.44                   15.5               0.61                          1.31     False
+   dsr               0.3       True                  1.41                0.41                 1.61                   52.5               0.63                          1.21     False
+logret               0.3       True                  1.44                0.46                 1.40                   37.5               0.79                          1.13     False
+   dsr               0.6       True                  1.28                0.45                 1.15                   26.5               0.74                          0.95     False
+logret               0.6       True                  1.57                0.19                 1.10                   27.5               0.72                          0.89     False
+logret               0.0       True                  1.01                0.41                 1.90                  103.5               0.49                          0.85     False
+   dsr               0.0       True                  1.41                0.51                 1.35                  111.0               0.56                          0.39     False
+selected: {'gamma': 0.9, 'lr': 0.0001, 'window': 60, 'reward': 'logret', 'turnover_penalty': 1.0, 'long_only': True}
+SPY improved training: 20 runs on 16 processes in 48 s
+SPY improved test: ensemble Sharpe 0.51 vs buy-and-hold 0.65 (trails); per-seed 0.52 +/- 0.05 (SE), success not passed
+improved cost stress: 0bps 0.53; 5bps 0.51; 10bps 0.50; 25bps 0.45 | 2008 window ensemble -0.09 vs B&H 0.14
+QQQ improved training: 20 runs on 16 processes in 48 s
+QQQ improved test: ensemble Sharpe 0.67 vs buy-and-hold 0.54 (beats); per-seed 0.46 +/- 0.04 (SE), success not passed

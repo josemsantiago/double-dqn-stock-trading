@@ -1,0 +1,9 @@
+{
+ "agent_mean_sharpe": -0.8561819743898207,
+ "agent_sharpe_se": 0.10047850342315667,
+ "seeds": 10,
+ "benchmark_sharpe": 0.1395030892537166,
+ "margin": -0.9956850636435373,
+ "margin_in_se": -9.909433657170373,
+ "passed": false
+}

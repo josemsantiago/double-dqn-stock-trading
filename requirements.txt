@@ -1,0 +1,15 @@
+# The agent needs PyTorch for the Q-network and the optimization, Gymnasium for the
+# environment interface, and pandas and numpy for the price data, features, and replay
+# buffers. matplotlib draws the figures and the demo video (the demo also needs ffmpeg
+# on the system path). Building the slide deck additionally uses python-pptx and Pillow.
+# Versions are pinned to the ones the committed run, figures, and deck were produced
+# with, so a re-run reproduces the same pipeline rather than drifting on an API change.
+# Training runs on the CPU, which is faster here than the GPU because the networks are
+# small and the bottleneck is stepping the environment.
+torch==2.8.0
+gymnasium==1.1.1
+numpy==1.26.4
+pandas==1.4.0
+matplotlib==3.5.1
+python-pptx==1.0.2
+Pillow==11.2.1

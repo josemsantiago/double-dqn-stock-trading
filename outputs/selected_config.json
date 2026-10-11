@@ -1,0 +1,27 @@
+{
+ "config": {
+  "reward": "logret",
+  "gamma": 0.9,
+  "lr": 0.0001,
+  "window": 60
+ },
+ "val_sharpe_mean": 1.4281739665497497,
+ "val_sharpe_sd": 0.39099526963452147,
+ "settings": {
+  "episodes": 200,
+  "episode_len": 252,
+  "buffer": 50000,
+  "batch": 64,
+  "learn_start": 2000,
+  "eps_start": 1.0,
+  "eps_end": 0.05,
+  "eps_decay_steps": 25000,
+  "target_sync": 1000,
+  "hidden": 64,
+  "weight_decay": 0.001,
+  "obs_noise": 0.5,
+  "eval_every": 10,
+  "select_from": 100,
+  "cost": 0.0005
+ }
+}

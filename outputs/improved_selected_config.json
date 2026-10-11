@@ -1,0 +1,12 @@
+{
+ "config": {
+  "gamma": 0.9,
+  "lr": 0.0001,
+  "window": 60,
+  "reward": "logret",
+  "turnover_penalty": 1.0,
+  "long_only": true
+ },
+ "val_ensemble_sharpe": 1.7226785931724278,
+ "val_seed_sharpe_mean": 1.5852773769766515
+}
